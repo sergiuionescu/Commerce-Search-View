@@ -5,5 +5,5 @@ function commerce_search_view_form_search_block_form_alter(&$form, &$form_state)
 }
 
 function commerce_search_view_submit($form, &$form_state) {
-  $_GET['destination'] = 'cautare?keys=' . $form_state['values']['search_block_form'];
+  $_GET['destination'] = 'cautare?termeni=' . $form_state['values']['search_block_form'];
 }
